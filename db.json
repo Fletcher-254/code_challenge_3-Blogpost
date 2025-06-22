@@ -1,0 +1,8 @@
+{
+    "posts": [
+      { "id": 1, "title": "Fresh Start", "content": "Welcome to the new blog." },
+      { "id": 2, "title": "Let's learn JSON", "content": "First db.json Server. Yaay!" },
+      { "id": 3, "title": "Work Smart", "content": "Focus on priorities." }
+    ]
+  }
+  

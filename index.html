@@ -1,35 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog Manager</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <title>Blog Post Manager</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <h1>Blog Post Manager</h1>
-  <div id="main">
-    <div id="post-list" class="sidebar"></div>
-    <div id="post-detail" class="content"></div>
+  <h1>Blog CRUD</h1>
+
+  <div>
+    <input type="text" id="post-title" placeholder="Post Title" />
+    <textarea id="post-content" placeholder="Post Content"></textarea>
   </div>
 
-  <form id="new-post-form">
-    <h3>Add New Post</h3>
-    <input type="text" id="new-title" placeholder="Title" required>
-    <input type="text" id="new-author" placeholder="Author" required>
-    <textarea id="new-content" placeholder="Content" required></textarea>
-    <button type="submit">Add Post</button>
-  </form>
+  <div>
+    <button id="create-post">Create Post</button>
+    <button id="get-posts">Get Posts</button>
+    <button id="update-post">PUT (Update Selected)</button>
+    <button id="delete-post">DELETE (Selected)</button>
+  </div>
 
-  <form id="edit-post-form" class="hidden">
-    <h4>Update Post </h4>
-    <label for="edit-title">Title:</label>
-    <input type="text" name="title" id="edit-title">
-    <label for="edit-content">Content:</label>
-    <textarea name="content" id="edit-content" rows="5"></textarea>
-    <button type="submit">Update Post</button>
-    <button type="button" id="cancel-edit">Cancel</button>
-  </form>
+  <h3>Available Posts:</h3>
+  <ul id="post-list"></ul>
 
   <script src="src/index.js"></script>
 </body>
